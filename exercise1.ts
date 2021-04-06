@@ -7,7 +7,7 @@
 // • Identify when type checking happens
 // • Afterwards we will analyze transpiler output
 
-export default () => {
+const Exercize1 = () => {
   // ======== Exercise 1.1 ========
   // Instructions:
   // • Hover over red squigglies to inspect the TS errors.
@@ -15,7 +15,7 @@ export default () => {
   // • Fix the error on line 18 by changing the value of pi to the expected type.
 
   let pi: string = "3.14159";
-  let tau: number = parseInt(pi) * 2;
+  let tau: number = parseFloat(pi) * 2;
 
   console.log("[Exercise 1.1]", `${tau} is ${pi} times two.`);
 
@@ -46,9 +46,9 @@ export default () => {
 
   const integer: number = 6;
   const float: number = 6.66;
-  const hex: string = "0xf00d";
-  const binary: string = "0b1010011010";
-  const octal: string = "0o744";
+  const hex: number = 0xf00d;
+  const binary: number = 0b1010011010;
+  const octal: number = 0o744;
   const negZero: number = -0;
   const actuallyNumber: number = NaN;
   const largestNumber: number = Number.MAX_VALUE;
@@ -118,3 +118,5 @@ export default () => {
     return `Added ${quantity} ${name}s to inventory.`;
   }
 };
+
+Exercize1();
