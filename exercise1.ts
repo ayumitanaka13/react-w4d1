@@ -14,8 +14,8 @@ const Exercize1 = () => {
   // • Hover over variables to inspect their types.
   // • Fix the error on line 18 by changing the value of pi to the expected type.
 
-  let pi: string = "3.14159";
-  let tau: number = parseFloat(pi) * 2;
+  let pi: number = 3.14159;
+  let tau: number = pi * 2;
 
   console.log("[Exercise 1.1]", `${tau} is ${pi} times two.`);
 
@@ -54,7 +54,7 @@ const Exercize1 = () => {
   const largestNumber: number = Number.MAX_VALUE;
   const mostBiglyNumber: number = Infinity;
 
-  const members: any[] = [
+  const members: number[] = [
     integer,
     float,
     hex,
@@ -66,7 +66,7 @@ const Exercize1 = () => {
     mostBiglyNumber,
   ];
 
-  members[0] = "12345";
+  members[0] = 12345;
 
   console.log("[Exercise 1.4]", members);
 
@@ -75,7 +75,7 @@ const Exercize1 = () => {
   // • Add type annotations (as explicit as possible)
   // • Fix errors (if applicable)
 
-  const sequence = Array.from(Array(10).keys());
+  const sequence:Array<number> = Array.from(Array(10).keys());
   const animals: Array<string> = [
     "pangolin",
     "aardvark",
